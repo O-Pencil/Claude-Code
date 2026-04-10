@@ -46,6 +46,8 @@ Claude-Code/
 
 ## P2 模块文档导航
 
+### 核心模块（10 个）
+
 | 模块 | 路径 | 说明 |
 |------|------|------|
 | **Bridge** | [src/bridge/CLAUDE.md](src/bridge/CLAUDE.md) | VSCode 桥接层，主入口 |
@@ -58,6 +60,20 @@ Claude-Code/
 | **Tasks** | [src/tasks/CLAUDE.md](src/tasks/CLAUDE.md) | 任务管理和调度 |
 | **Types** | [src/types/CLAUDE.md](src/types/CLAUDE.md) | 类型定义和生成代码 |
 | **Utils** | [src/utils/CLAUDE.md](src/utils/CLAUDE.md) | 通用工具函数 |
+
+### 扩展模块（9 个）
+
+| 模块 | 路径 | 说明 |
+|------|------|------|
+| **State** | [src/state/CLAUDE.md](src/state/CLAUDE.md) | 状态管理（6 个文件） |
+| **Hooks** | [src/hooks/CLAUDE.md](src/hooks/CLAUDE.md) | React 钩子库（85+ 钩子） |
+| **Constants** | [src/constants/CLAUDE.md](src/constants/CLAUDE.md) | 常量定义（20+ 文件） |
+| **Context** | [src/context/CLAUDE.md](src/context/CLAUDE.md) | React 上下文（9 个组件） |
+| **Memdir** | [src/memdir/CLAUDE.md](src/memdir/CLAUDE.md) | 记忆目录管理（8 个文件） |
+| **Keybindings** | [src/keybindings/CLAUDE.md](src/keybindings/CLAUDE.md) | 键位绑定系统（14 个文件） |
+| **Entrypoints** | [src/entrypoints/CLAUDE.md](src/entrypoints/CLAUDE.md) | 应用入口（6 个入口） |
+| **Coordinator** | [src/coordinator/CLAUDE.md](src/coordinator/CLAUDE.md) | 协调器系统（1 个文件） |
+| **Plugins** | [src/plugins/CLAUDE.md](src/plugins/CLAUDE.md) | 插件系统（2 个文件） |
 
 ---
 
@@ -131,7 +147,7 @@ npm start
 本项目使用 **DIP (Dual-phase Isomorphic Documentation)** 协议：
 
 - **P1**: 根文档（本文件），全局拓扑和导航 ✅
-- **P2**: 模块文档（每个源目录一个 CLAUDE.md），成员列表和职责 ✅ 10/10 核心模块
+- **P2**: 模块文档（每个源目录一个 CLAUDE.md），成员列表和职责 ✅ 19/19 核心模块
 - **P3**: 文件头注释（WHO/FROM/TO/HERE），快速相关性判断 ✅ 50+ 核心文件
 
 ### DIP 覆盖统计
@@ -139,7 +155,7 @@ npm start
 | 层级 | 目标 | 已完成 | 覆盖率 |
 |------|------|--------|--------|
 | P1 | 1 文件 | 1 文件 | 100% |
-| P2 | 10 核心模块 | 10 模块 | 100% |
+| P2 | 19 核心模块 | 19 模块 | 100% |
 | P3 | 50+ 文件 | 50 文件 | 目标达成 |
 
 **P3 覆盖的核心文件包括：**
