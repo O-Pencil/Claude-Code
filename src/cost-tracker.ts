@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供成本追踪 (cost 函数，Token 统计，USD 成本，行数统计)
+ * [FROM]: 依赖 src/bootstrap/state.js, src/services/api/logging.ts, @anthropic-ai/sdk
+ * [TO]: 被 src/commands/cost/, src/commands/stats/, src/services/api/ 消费
+ * [HERE]: src/cost-tracker.ts — 成本追踪核心，~320 行
+ */
 import type { BetaUsage as Usage } from '@anthropic-ai/sdk/resources/beta/messages/messages.mjs'
 import chalk from 'chalk'
 import {

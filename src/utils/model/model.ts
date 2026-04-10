@@ -1,5 +1,11 @@
 // biome-ignore-all assist/source/organizeImports: ANT-ONLY import markers must not be reordered
 /**
+ * [WHO]: 提供模型配置和解析 (model 函数，模型别名，上下文窗口，成本计算)
+ * [FROM]: 依赖 src/bootstrap/state.js, src/utils/auth.ts, src/utils/model/modelStrings.js
+ * [TO]: 被 src/commands/model/, src/services/api/claude.ts, src/utils/model/ 消费
+ * [HERE]: src/utils/model/model.ts — 模型配置核心，~620 行
+ */
+/**
  * Ensure that any model codenames introduced here are also added to
  * scripts/excluded-strings.txt to avoid leaking them. Wrap any codename string
  * literals with process.env.USER_TYPE === 'ant' for Bun to remove the codenames

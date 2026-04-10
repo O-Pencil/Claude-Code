@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供引导状态管理 (getSessionId, getProjectRoot, 状态信号，OpenTelemetry 配置)
+ * [FROM]: 依赖 src/utils/, src/types/, src/tools/AgentTool/
+ * [TO]: 被 src/setup.ts, src/QueryEngine.ts, src/services/ 广泛消费
+ * [HERE]: src/bootstrap/state.ts — 引导状态核心，~1760 行
+ */
 import type { BetaMessageStreamParams } from '@anthropic-ai/sdk/resources/beta/messages/messages.mjs'
 import type { Attributes, Meter, MetricOptions } from '@opentelemetry/api'
 import type { logs } from '@opentelemetry/api-logs'

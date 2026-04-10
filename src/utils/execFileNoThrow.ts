@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 execFile 封装 (execFileNoThrow, 跨平台命令执行，错误处理)
+ * [FROM]: 依赖 execa 库，src/utils/cwd.js, src/utils/log.js
+ * [TO]: 被 src/utils/git.ts, src/utils/which.ts, src/utils/execFileNoThrowPortable.ts 消费
+ * [HERE]: src/utils/execFileNoThrow.ts — execFile 封装核心，~150 行
+ */
 // This file represents useful wrappers over node:child_process
 // These wrappers ease error handling and cross-platform compatbility
 // By using execa, Windows automatically gets shell escaping + BAT / CMD handling

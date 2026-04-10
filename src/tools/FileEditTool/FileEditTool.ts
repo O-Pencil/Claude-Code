@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供文件编辑工具 (FileEditTool, diff/patch 应用，LSP 集成)
+ * [FROM]: 依赖 src/Tool.ts, src/services/lsp/, src/services/mcp/vscodeSdkMcp.js, src/skills/
+ * [TO]: 被 src/tools.ts, src/components/permissions/FileEditPermissionRequest/ 消费
+ * [HERE]: src/tools/FileEditTool/FileEditTool.ts — 文件编辑核心，~620 行
+ */
 import { dirname, isAbsolute, sep } from 'path'
 import { logEvent } from 'src/services/analytics/index.js'
 import { getFeatureValue_CACHED_MAY_BE_STALE } from '../../services/analytics/growthbook.js'

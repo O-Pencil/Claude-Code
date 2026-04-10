@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供系统上下文 (getSystemPrompt, getUserContext, Git 信息，CLAUDE.md 加载)
+ * [FROM]: 依赖 src/bootstrap/state.js, src/utils/claudemd.js, src/utils/git.js
+ * [TO]: 被 src/QueryEngine.ts, src/services/SessionMemory/, src/tools/ 消费
+ * [HERE]: src/context.ts — 上下文生成核心，~190 行
+ */
 import { feature } from 'bun:bundle'
 import memoize from 'lodash-es/memoize.js'
 import {

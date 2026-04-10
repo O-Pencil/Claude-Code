@@ -1,4 +1,10 @@
 /**
+ * [WHO]: 提供 CLAUDE.md 加载和解析 (getClaudeMds, @include 指令，文件发现，优先级排序)
+ * [FROM]: 依赖 src/bootstrap/state.js, src/utils/git.js, src/utils/envUtils.js
+ * [TO]: 被 src/context.ts, src/QueryEngine.ts, src/services/SessionMemory/ 消费
+ * [HERE]: src/utils/claudemd.ts — CLAUDE.md 加载核心，~1480 行
+ */
+/**
  * Files are loaded in the following order:
  *
  * 1. Managed memory (eg. /etc/claude-code/CLAUDE.md) - Global instructions for all users

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 Git 工具函数 (findGitRoot, getBranch, 仓库检测，worktree 支持)
+ * [FROM]: 依赖 src/utils/cwd.js, src/utils/execFileNoThrow.js, src/utils/git/gitFilesystem.js
+ * [TO]: 被 src/utils/config.ts, src/commands/branch/, src/tools/ 消费
+ * [HERE]: src/utils/git.ts — Git 工具核心，~920 行
+ */
 import { createHash } from 'crypto'
 import { readFileSync, realpathSync, statSync } from 'fs'
 import { open, readFile, realpath, stat } from 'fs/promises'

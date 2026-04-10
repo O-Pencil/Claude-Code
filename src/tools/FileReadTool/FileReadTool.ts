@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供文件读取工具 (FileReadTool, 文件内容读取，PDF 提取，图片处理)
+ * [FROM]: 依赖 src/constants/files.ts, src/services/tokenEstimation.ts, src/skills/
+ * [TO]: 被 src/tools.ts, src/components/permissions/ 消费
+ * [HERE]: src/tools/FileReadTool/FileReadTool.ts — 文件读取核心，~1180 行
+ */
 import type { Base64ImageSource } from '@anthropic-ai/sdk/resources/index.mjs'
 import { readdir, readFile as readFileAsync } from 'fs/promises'
 import * as path from 'path'

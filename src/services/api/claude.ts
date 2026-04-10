@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 Claude API 客户端 (消息调用，流式响应，Token 统计，成本计算)
+ * [FROM]: 依赖 @anthropic-ai/sdk, src/utils/model/, src/services/api/logging.ts
+ * [TO]: 被 src/QueryEngine.ts, src/services/api/, src/tools/ 消费
+ * [HERE]: src/services/api/claude.ts — API 客户端核心，~3420 行
+ */
 import type {
   BetaContentBlock,
   BetaContentBlockParam,

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供提示提交处理 (handlePromptSubmit, 命令解析，引用展开，AbortController)
+ * [FROM]: 依赖 src/commands.js, src/state/AppState.js, src/hooks/useCanUseTool.js, src/types/
+ * [TO]: 被 src/components/PromptInput/, src/hooks/useCommandKeybindings.tsx 消费
+ * [HERE]: src/utils/handlePromptSubmit.ts — 提示提交核心，~610 行
+ */
 import type { UUID } from 'crypto'
 import { logEvent } from 'src/services/analytics/index.js'
 import type { AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS } from 'src/services/analytics/metadata.js'

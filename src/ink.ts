@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 Ink 终端 UI 渲染 (render, createRoot, ThemeProvider 包装)
+ * [FROM]: 依赖 src/ink/root.js, components/design-system/ThemeProvider.js
+ * [TO]: 被 src/entrypoints/cli.tsx, src/components/ 消费
+ * [HERE]: src/ink.ts — Ink UI 入口，~80 行
+ */
 import { createElement, type ReactNode } from 'react'
 import { ThemeProvider } from './components/design-system/ThemeProvider.js'
 import inkRender, {

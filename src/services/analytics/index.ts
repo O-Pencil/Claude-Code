@@ -1,4 +1,10 @@
 /**
+ * [WHO]: 提供遥测分析服务 (logEvent, logEventAsync, 事件导出)
+ * [FROM]: 无依赖 (设计为独立模块，避免循环依赖)
+ * [TO]: 被全项目广泛消费 (bridge/, tools/, commands/, hooks/)
+ * [HERE]: src/services/analytics/index.ts — 分析服务入口，~170 行
+ */
+/**
  * Analytics service - public API for event logging
  *
  * This module serves as the main entry point for analytics events in Claude CLI.

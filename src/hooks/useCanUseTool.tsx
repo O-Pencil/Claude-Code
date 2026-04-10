@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供工具权限检查钩子 (useCanUseTool, 权限验证逻辑)
+ * [FROM]: 依赖 src/Tool.ts, src/tools/BashTool/, src/utils/permissions/, src/hooks/toolPermission/
+ * [TO]: 被 src/components/permissions/, src/tools/ 消费
+ * [HERE]: src/hooks/useCanUseTool.tsx — 工具权限核心钩子，~200 行
+ */
 import { c as _c } from "react/compiler-runtime";
 import { feature } from 'bun:bundle';
 import { APIUserAbortError } from '@anthropic-ai/sdk';

@@ -1,4 +1,10 @@
 // biome-ignore-all assist/source/organizeImports: ANT-ONLY import markers must not be reordered
+/**
+ * [WHO]: 提供工具注册和导出 (所有工具的统一入口，Tools 类型)
+ * [FROM]: 依赖 src/tools/* (各工具实现), Tool.ts (工具类型)
+ * [TO]: 被 src/coordinator/, src/tasks/, src/commands/ 消费
+ * [HERE]: src/tools.ts — 工具注册中心，~400 行，汇总所有内置工具
+ */
 import { toolMatchesName, type Tool, type Tools } from './Tool.js'
 import { AgentTool } from './tools/AgentTool/AgentTool.js'
 import { SkillTool } from './tools/SkillTool/SkillTool.js'

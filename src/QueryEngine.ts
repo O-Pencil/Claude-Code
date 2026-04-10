@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供查询引擎核心 (QueryEngine 类，消息处理，API 调用，工具执行)
+ * [FROM]: 依赖 src/commands.ts, src/services/api/, src/tools/, src/types/
+ * [TO]: 被 src/entrypoints/, src/tasks/ 消费
+ * [HERE]: src/QueryEngine.ts — 查询引擎核心，~1300 行
+ */
 import { feature } from 'bun:bundle'
 import type { ContentBlockParam } from '@anthropic-ai/sdk/resources/messages.mjs'
 import { randomUUID } from 'crypto'

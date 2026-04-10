@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 Bash 工具实现 (BashTool, shell 命令执行，权限验证，沙箱控制)
+ * [FROM]: 依赖 LocalShellTask.tsx, bashPermissions.ts, bashSecurity.ts, Tool.js
+ * [TO]: 被 src/tools/, src/commands/ 消费
+ * [HERE]: src/tools/BashTool/BashTool.tsx — Shell 执行核心工具，~1100 行
+ */
 import { feature } from 'bun:bundle';
 import type { ToolResultBlockParam } from '@anthropic-ai/sdk/resources/index.mjs';
 import { copyFile, stat as fsStat, truncate as fsTruncate, link } from 'fs/promises';

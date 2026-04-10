@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供平台检测 (getPlatform, 平台类型枚举，WSL 检测)
+ * [FROM]: 依赖 src/utils/fsOperations.ts, os 模块
+ * [TO]: 被 src/utils/shell/shellToolUtils.ts, src/utils/execFileNoThrow.ts, src/tools/ 消费
+ * [HERE]: src/utils/platform.ts — 平台检测核心，~150 行
+ */
 import { readdir, readFile } from 'fs/promises'
 import memoize from 'lodash-es/memoize.js'
 import { release as osRelease } from 'os'

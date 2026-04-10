@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供任务类型和状态定义 (TaskType, TaskStatus, 任务辅助函数)
+ * [FROM]: 依赖 state/AppState.js, types/ids.js, utils/task/
+ * [TO] 被 src/tasks/, src/state/, src/tools/ 消费
+ * [HERE]: src/Task.ts — 任务类型定义，~120 行
+ */
 import { randomBytes } from 'crypto'
 import type { AppState } from './state/AppState.js'
 import type { AgentId } from './types/ids.js'

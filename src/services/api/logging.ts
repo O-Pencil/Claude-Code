@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 API 日志记录 (logAPICall, 使用统计，成本追踪，遥测事件)
+ * [FROM]: 依赖 src/bootstrap/state.js, src/utils/telemetry/, @anthropic-ai/sdk
+ * [TO]: 被 src/services/api/claude.ts, src/QueryEngine.ts, src/tools/ 消费
+ * [HERE]: src/services/api/logging.ts — API 日志核心，~790 行
+ */
 import { feature } from 'bun:bundle'
 import { APIError } from '@anthropic-ai/sdk'
 import type {

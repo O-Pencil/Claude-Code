@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 Bash 命令解析 (命令分割，操作符解析，heredoc 处理，占位符生成)
+ * [FROM]: 依赖 shell-quote, src/utils/bash/heredoc.ts, src/utils/bash/shellQuote.ts
+ * [TO]: 被 src/tools/BashTool/, src/utils/bash/ast.ts 消费
+ * [HERE]: src/utils/bash/commands.ts — Bash 命令解析核心，~1340 行
+ */
 import { randomBytes } from 'crypto'
 import type { ControlOperator, ParseEntry } from 'shell-quote'
 import {

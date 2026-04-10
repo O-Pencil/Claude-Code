@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供历史记录管理 (会话历史，粘贴内容存储，历史条目读写)
+ * [FROM]: 依赖 src/bootstrap/state.js, src/utils/config.js, src/utils/pasteStore.js
+ * [TO]: 被 src/utils/handlePromptSubmit.ts, src/components/PromptInput/ 消费
+ * [HERE]: src/history.ts — 历史记录核心，~460 行
+ */
 import { appendFile, writeFile } from 'fs/promises'
 import { join } from 'path'
 import { getProjectRoot, getSessionId } from './bootstrap/state.js'

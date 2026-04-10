@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供认证工具 (auth 函数，OAuth 刷新，API 密钥管理)
+ * [FROM]: 依赖 src/constants/oauth.js, src/services/analytics/, src/utils/model/
+ * [TO]: 被 src/setup.ts, src/services/oauth/, src/commands/login/ 消费
+ * [HERE]: src/utils/auth.ts — 认证工具核心，~2000 行
+ */
 import chalk from 'chalk'
 import { exec } from 'child_process'
 import { execa } from 'execa'

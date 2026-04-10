@@ -1,4 +1,10 @@
 // biome-ignore-all assist/source/organizeImports: ANT-ONLY import markers must not be reordered
+/**
+ * [WHO]: 提供工具常量定义 (工具名称、工具白名单、异步工具配置)
+ * [FROM]: 依赖 src/tools/*/constants.js (各工具常量)
+ * [TO]: 被 src/coordinator/, src/tools/, src/commands/ 消费
+ * [HERE]: src/constants/tools.ts — 工具常量中心，~110 行
+ */
 import { feature } from 'bun:bundle'
 import { TASK_OUTPUT_TOOL_NAME } from '../tools/TaskOutputTool/constants.js'
 import { EXIT_PLAN_MODE_V2_TOOL_NAME } from '../tools/ExitPlanModeTool/constants.js'

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供设置管理 (getSettings, updateSettings, 设置合并，多源配置)
+ * [FROM]: 依赖 src/bootstrap/state.js, src/utils/fileRead.ts, src/utils/fsOperations.ts
+ * [TO]: 被 src/commands/config/, src/utils/model/model.ts, src/services/ 消费
+ * [HERE]: src/utils/settings/settings.ts — 设置管理核心，~1010 行
+ */
 import { feature } from 'bun:bundle'
 import mergeWith from 'lodash-es/mergeWith.js'
 import { dirname, join, resolve } from 'path'

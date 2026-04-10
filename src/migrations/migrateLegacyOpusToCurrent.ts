@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 Opus 模型迁移 (迁移函数，设置更新)
+ * [FROM]: 依赖 src/services/analytics/, src/utils/config.js, src/utils/model/
+ * [TO]: 被 src/setup.ts, src/migrations/ 消费
+ * [HERE]: src/migrations/migrateLegacyOpusToCurrent.ts — 模型迁移，~60 行
+ */
 import {
   type AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS,
   logEvent,

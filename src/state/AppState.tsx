@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供应用状态管理 (AppState, AppStateProvider, 状态选择器)
+ * [FROM]: 依赖 store.ts, AppStateStore.ts, hooks/, utils/settings/
+ * [TO]: 被 src/components/, src/hooks/, src/commands/ 广泛消费
+ * [HERE]: src/state/AppState.tsx — React 状态管理核心，~200 行
+ */
 import { c as _c } from "react/compiler-runtime";
 import { feature } from 'bun:bundle';
 import React, { useContext, useEffect, useEffectEvent, useState, useSyncExternalStore } from 'react';

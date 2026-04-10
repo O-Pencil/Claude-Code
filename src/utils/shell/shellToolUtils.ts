@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 Shell 工具工具函数 (SHELL_TOOL_NAMES, PowerShell 启用检查)
+ * [FROM]: 依赖 src/tools/BashTool/toolName.js, src/tools/PowerShellTool/toolName.js, src/utils/envUtils.js
+ * [TO]: 被 src/tools.ts, src/tools/BashTool/, src/tools/PowerShellTool/ 消费
+ * [HERE]: src/utils/shell/shellToolUtils.ts — Shell 工具工具，~25 行
+ */
 import { BASH_TOOL_NAME } from '../../tools/BashTool/toolName.js'
 import { POWERSHELL_TOOL_NAME } from '../../tools/PowerShellTool/toolName.js'
 import { isEnvDefinedFalsy, isEnvTruthy } from '../envUtils.js'

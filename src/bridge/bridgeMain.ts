@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供桥接主入口函数 (initBridgeMain, runBridgeSession, shutdownBridge)
+ * [FROM]: 依赖 bridgeApi.ts (API 客户端), analytics/ (遥测), utils/ (工具函数)
+ * [TO]: 被 src/entrypoints/, src/bridge/replBridge.ts 消费
+ * [HERE]: src/bridge/bridgeMain.ts — 桥接层核心入口，负责会话生命周期管理
+ */
 import { feature } from 'bun:bundle'
 import { randomUUID } from 'crypto'
 import { hostname, tmpdir } from 'os'

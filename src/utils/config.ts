@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供配置管理 (getConfig, saveConfig, 文件监听，项目/全局配置)
+ * [FROM]: 依赖 src/bootstrap/state.js, src/services/, src/utils/git.js
+ * [TO]: 被 src/commands/config/, src/setup.ts, src/services/ 消费
+ * [HERE]: src/utils/config.ts — 配置管理核心，~1820 行
+ */
 import { feature } from 'bun:bundle'
 import { randomBytes } from 'crypto'
 import { unwatchFile, watchFile } from 'fs'

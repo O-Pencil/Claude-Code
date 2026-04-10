@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 CLI 入口点 (cli 启动函数，初始化逻辑，特性开关)
+ * [FROM]: 依赖 src/init.ts, src/setup.ts, src/bridge/, src/services/
+ * [TO]: 被 dist/cli.js 调用，用户通过命令行启动
+ * [HERE]: src/entrypoints/cli.tsx — CLI 主入口，~300 行
+ */
 import { feature } from 'bun:bundle';
 
 // Bugfix for corepack auto-pinning, which adds yarnpkg to peoples' package.jsons

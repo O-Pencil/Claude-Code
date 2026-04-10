@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 Diff 工具 (structuredPatch, 行计数，hunk 调整)
+ * [FROM]: 依赖 diff 库，src/bootstrap/state.js, src/cost-tracker.ts
+ * [TO]: 被 src/tools/FileEditTool/, src/utils/file.ts 消费
+ * [HERE]: src/utils/diff.ts — Diff 工具核心，~180 行
+ */
 import { type StructuredPatchHunk, structuredPatch } from 'diff'
 import { logEvent } from 'src/services/analytics/index.js'
 import { getLocCounter } from '../bootstrap/state.js'

@@ -1,4 +1,10 @@
 // biome-ignore-all assist/source/organizeImports: ANT-ONLY import markers must not be reordered
+/**
+ * [WHO]: 提供 REPL 桥接核心实现 (ReplBridge 类，消息处理，传输逻辑)
+ * [FROM]: 依赖 bridgeApi.ts (API), types.ts (类型), analytics/ (遥测), utils/ (工具)
+ * [TO]: 被 bridgeMain.ts, initReplBridge.ts 消费
+ * [HERE]: src/bridge/replBridge.ts — REPL 桥接核心，处理 CLI 与 VSCode 之间的消息传递
+ */
 import { randomUUID } from 'crypto'
 import {
   createBridgeApiClient,

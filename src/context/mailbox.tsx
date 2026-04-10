@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供邮箱上下文 (MailboxContext, MailboxProvider, 消息队列)
+ * [FROM]: 依赖 utils/mailbox.js, React
+ * [TO]: 被 src/state/AppState.tsx, src/components/ 消费
+ * [HERE]: src/context/mailbox.tsx — 邮箱上下文，~40 行
+ */
 import { c as _c } from "react/compiler-runtime";
 import React, { createContext, useContext, useMemo } from 'react';
 import { Mailbox } from '../utils/mailbox.js';

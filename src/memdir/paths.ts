@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供记忆目录路径管理 (getMemDirPath, 项目记忆路径，全局记忆路径)
+ * [FROM]: 依赖 src/bootstrap/state.js, src/services/analytics/, src/utils/
+ * [TO]: 被 src/services/SessionMemory/, src/commands/memory/ 消费
+ * [HERE]: src/memdir/paths.ts — 记忆路径核心，~280 行
+ */
 import memoize from 'lodash-es/memoize.js'
 import { homedir } from 'os'
 import { isAbsolute, join, normalize, sep } from 'path'

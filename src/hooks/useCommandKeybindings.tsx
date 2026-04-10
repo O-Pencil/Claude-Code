@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供命令键位绑定钩子 (useCommandKeybindings, 键位注册和触发)
+ * [FROM]: 依赖 src/keybindings/, src/context/overlayContext.js, src/utils/handlePromptSubmit.js
+ * [TO]: 被 src/components/App.tsx, src/ink/ 消费
+ * [HERE]: src/hooks/useCommandKeybindings.tsx — 键位绑定核心，~110 行
+ */
 import { c as _c } from "react/compiler-runtime";
 /**
  * Component that registers keybinding handlers for command bindings.

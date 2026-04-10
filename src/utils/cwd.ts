@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供工作目录管理 (getCwd, pwd, runWithCwdOverride, AsyncLocalStorage)
+ * [FROM]: 依赖 src/bootstrap/state.js, async_hooks
+ * [TO]: 被 src/utils/execFileNoThrow.ts, src/tools/BashTool/, src/utils/git.ts 消费
+ * [HERE]: src/utils/cwd.ts — 工作目录核心，~50 行
+ */
 import { AsyncLocalStorage } from 'async_hooks'
 import { getCwdState, getOriginalCwd } from '../bootstrap/state.js'
 

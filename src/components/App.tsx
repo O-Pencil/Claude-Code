@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供应用根组件 (App, 状态提供者，FPS 指标，统计上下文)
+ * [FROM]: 依赖 src/state/AppState.js, src/context/fpsMetrics.js, src/context/stats.js
+ * [TO]: 被 src/entrypoints/cli.tsx, src/ink/ 消费
+ * [HERE]: src/components/App.tsx — 应用根组件，~60 行
+ */
 import { c as _c } from "react/compiler-runtime";
 import React from 'react';
 import { FpsMetricsProvider } from '../context/fpsMetrics.js';

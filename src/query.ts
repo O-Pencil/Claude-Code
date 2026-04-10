@@ -1,4 +1,10 @@
 // biome-ignore-all assist/source/organizeImports: ANT-ONLY import markers must not be reordered
+/**
+ * [WHO]: 提供查询核心 (query 函数，消息循环，工具执行，上下文压缩)
+ * [FROM]: 依赖 src/hooks/useCanUseTool.js, src/services/compact/, src/services/api/
+ * [TO]: 被 src/QueryEngine.ts, src/utils/forkedAgent.ts, src/tasks/ 消费
+ * [HERE]: src/query.ts — 查询核心，~1730 行
+ */
 import type {
   ToolResultBlockParam,
   ToolUseBlock,

@@ -1,4 +1,10 @@
 /**
+ * [WHO]: 提供会话记忆服务 (SessionMemory, 后台子 Agent 提取记忆，自动维护)
+ * [FROM]: 依赖 src/Tool.ts, src/tools/FileReadTool/, src/utils/forkedAgent.js, src/bootstrap/state.js
+ * [TO]: 被 src/setup.ts, src/commands/memory/ 消费
+ * [HERE]: src/services/SessionMemory/sessionMemory.ts — 会话记忆核心，~490 行
+ */
+/**
  * Session Memory automatically maintains a markdown file with notes about the current conversation.
  * It runs periodically in the background using a forked subagent to extract key information
  * without interrupting the main conversation flow.

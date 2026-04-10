@@ -1,4 +1,10 @@
 /**
+ * [WHO]: 提供分叉 Agent 工具 (runForkedAgent, 缓存共享，使用追踪，状态隔离)
+ * [FROM]: 依赖 src/query.js, src/services/api/claude.ts, src/Tool.ts, src/commands.js
+ * [TO]: 被 src/services/SessionMemory/, src/tools/AgentTool/, src/utils/agentContext.js 消费
+ * [HERE]: src/utils/forkedAgent.ts — 分叉 Agent 核心，~690 行
+ */
+/**
  * Helper for running forked agent query loops with usage tracking.
  *
  * This utility ensures forked agents:

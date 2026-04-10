@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供工具系统核心类型和构建器 (ToolDef, buildTool, ToolUseContext)
+ * [FROM]: 依赖 @anthropic-ai/sdk, @modelcontextprotocol/sdk, hooks/, commands/
+ * [TO]: 被 src/tools/*, src/components/permissions/ 消费
+ * [HERE]: src/Tool.ts — 工具定义核心，~800 行，所有工具的基类
+ */
 import type {
   ToolResultBlockParam,
   ToolUseBlockParam,

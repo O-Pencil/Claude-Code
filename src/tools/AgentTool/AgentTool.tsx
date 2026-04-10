@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 Agent 工具实现 (AgentTool, Agent 调用，进度跟踪，通知)
+ * [FROM]: 依赖 src/Tool.ts, src/tasks/LocalAgentTask/, src/services/AgentSummary/, src/utils/
+ * [TO]: 被 src/tools.ts, src/commands/agents/ 消费
+ * [HERE]: src/tools/AgentTool/AgentTool.tsx — Agent 工具核心，~1400 行
+ */
 import { feature } from 'bun:bundle';
 import * as React from 'react';
 import { buildTool, type ToolDef, toolMatchesName } from 'src/Tool.js';

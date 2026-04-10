@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供 MCP 客户端实现 (MCP Client, 传输层，工具调用，资源读取)
+ * [FROM]: 依赖 @modelcontextprotocol/sdk, @anthropic-ai/sdk, src/services/mcp/
+ * [TO]: 被 src/tools/MCPTool/, src/commands/mcp/, src/services/mcp/ 消费
+ * [HERE]: src/services/mcp/client.ts — MCP 客户端核心，~3350 行
+ */
 import { feature } from 'bun:bundle'
 import type {
   Base64ImageSource,

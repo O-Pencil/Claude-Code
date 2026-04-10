@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供应用初始化设置 (init 函数，会话配置，终端恢复)
+ * [FROM]: 依赖 src/bootstrap/state.ts, src/commands.ts, src/services/, src/utils/
+ * [TO]: 被 src/entrypoints/cli.tsx, src/init.ts 消费
+ * [HERE]: src/setup.ts — 应用设置核心，~480 行
+ */
 /* eslint-disable custom-rules/no-process-exit */
 
 import { feature } from 'bun:bundle'

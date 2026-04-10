@@ -1,4 +1,10 @@
 // biome-ignore-all assist/source/organizeImports: ANT-ONLY import markers must not be reordered
+/**
+ * [WHO]: 提供 CLI 输出打印系统 (print 函数，结构化输出，ANSI 渲染，进度条)
+ * [FROM]: 依赖 structuredIO.ts, remoteIO.ts, commands/, services/settingsSync/
+ * [TO]: 被 src/cli/handlers/, src/commands/ 广泛消费
+ * [HERE]: src/cli/print.ts — CLI 输出核心，~5500 行，处理所有终端渲染逻辑
+ */
 import { feature } from 'bun:bundle'
 import { readFile, stat } from 'fs/promises'
 import { dirname } from 'path'

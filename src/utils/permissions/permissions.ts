@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供权限检查核心逻辑 (hasPermissionsToUseTool, 权限验证，沙箱检查)
+ * [FROM]: 依赖 src/Tool.ts, src/tools/BashTool/, src/utils/sandbox/, src/hooks/useCanUseTool.js
+ * [TO]: 被 src/hooks/useCanUseTool.tsx, src/tools/, src/components/permissions/ 消费
+ * [HERE]: src/utils/permissions/permissions.ts — 权限检查核心，~1490 行
+ */
 import { feature } from 'bun:bundle'
 import { APIUserAbortError } from '@anthropic-ai/sdk'
 import type { CanUseToolFn } from '../../hooks/useCanUseTool.js'

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供键位绑定上下文 (KeybindingContext, 键位解析， chord 支持)
+ * [FROM]: 依赖 resolver.ts, types.ts, src/ink.js
+ * [TO]: 被 src/hooks/useCommandKeybindings.tsx, src/components/ 消费
+ * [HERE]: src/keybindings/KeybindingContext.tsx — 键位上下文核心，~240 行
+ */
 import { c as _c } from "react/compiler-runtime";
 import React, { createContext, type RefObject, useContext, useLayoutEffect, useMemo } from 'react';
 import type { Key } from '../ink.js';

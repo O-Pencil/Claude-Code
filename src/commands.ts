@@ -1,4 +1,10 @@
 // biome-ignore-all assist/source/organizeImports: ANT-ONLY import markers must not be reordered
+/**
+ * [WHO]: 提供命令注册和导出 (所有命令的统一入口，Command 类型)
+ * [FROM]: 依赖 src/commands/* (各命令实现)
+ * [TO]: 被 src/cli/handlers/, src/commands.js 消费
+ * [HERE]: src/commands.ts — 命令注册中心，~750 行，汇总所有内置命令
+ */
 import addDir from './commands/add-dir/index.js'
 import autofixPr from './commands/autofix-pr/index.js'
 import backfillSessions from './commands/backfill-sessions/index.js'

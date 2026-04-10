@@ -1,3 +1,9 @@
+/**
+ * [WHO]: 提供协调器模式配置 (coordinatorMode 函数，工具白名单，特性开关)
+ * [FROM]: 依赖 constants/tools.ts, tools/* (工具常量), analytics/ (特性开关)
+ * [TO]: 被 src/coordinator/, src/commands/ 消费
+ * [HERE]: src/coordinator/coordinatorMode.ts — 协调器模式配置，~370 行
+ */
 import { feature } from 'bun:bundle'
 import { ASYNC_AGENT_ALLOWED_TOOLS } from '../constants/tools.js'
 import { checkStatsigFeatureGate_CACHED_MAY_BE_STALE } from '../services/analytics/growthbook.js'
